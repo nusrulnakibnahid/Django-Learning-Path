@@ -465,7 +465,7 @@ Step-by-step Django learning order:
 # Author
 
 Md. Nusrul Nakib Nahid  
-Software Engineering Student  
+Software Engineer
 Daffodil International University
 
 GitHub  
