@@ -16,15 +16,28 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Machine_Learning import views
-from Blogs import views as b
+
+#another method to import views (first 3 lines)
+from Machine_Learning.views import machine_learning
+from Machine_Learning.views import deep_learning
+from Machine_Learning.views import about_us
+
+from Blogs import views as blg
+from Deep_Learning import views as dpl
+from Data_Analysis import views as da
+from About_Us import views as abt
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.machine_learning),
-    path('dl/', views.deep_learning),
-    path('about/', views.about_us),
-    path('blog/', b.blog1),
+    
+    path('', machine_learning),
+    path('dl/',deep_learning),
+    path('about/',about_us),
+
+    path('blog/', blg.blog1),
+    path('deepl/', dpl.deep_learning),
+    path('analysis/', da.data_analysis),
+    path('about_us/',abt.about_us),
 ]
