@@ -4,7 +4,7 @@ from .import views
 
 urlpatterns = [
 
-    path('', views.deep_learning),
+    path('dlearning/', views.deep_learning),
     
 
 ]

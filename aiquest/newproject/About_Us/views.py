@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def about_us(request):
-    return HttpResponse('<b>This is about us page , thank you</b>')
+    return render(request, 'about.html')
