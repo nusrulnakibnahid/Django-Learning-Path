@@ -4,7 +4,7 @@ from .import views
 
 urlpatterns = [
 
-    path('', views.machine_learning),
+    path('machine/', views.machine_learning),
     path('dl/',views.deep_learning),
     path('about/',views.about_us),
 
