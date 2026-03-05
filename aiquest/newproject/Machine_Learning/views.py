@@ -14,4 +14,17 @@ def machine_learning(request):
    # return HttpResponse("<h1>Thank you, This is about page</h1>")
 
 
+
+
+
+def random(request):
+    return render(request, 'machine_learning/random_forest.html')
+
+
+def K_nearest(request):
+    return render(request, 'machine_learning/knn.html')
+
+
+def dtree(request):
+    return render(request, 'machine_learning/dt.html')
     
