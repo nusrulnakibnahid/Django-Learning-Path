@@ -3,7 +3,13 @@ from django.http import HttpResponse
 
 # Create your views here.
 def machine_learning(request):
-    return render(request, 'machine_learning.html')
+    course = 'machine learning'
+    Tclass = 21
+    seat = 20
+    cduaration = '2.5 months'
+    offering = {'c':course, 'tl':Tclass, 'st':seat, 'cd':cduaration}
+    return render(request, 'machine_learning/machine_learning.html',context=offering)
+
 
 
 # def deep_learning(request):
