@@ -8,4 +8,8 @@ def data_analysis(request):
     day = 30
 
     update = {'da': data, 'l': le, 'd': day}
-    return render(request, 'data_analysis/data_analysis.html', context=update)
+
+    Teachers = {'names':['Shakib', 'Rabby', 'Nakib'] }
+    # return render(request, 'data_analysis/data_analysis.html', context=update)
+
+    return render(request, 'data_analysis/data_analysis.html', context=Teachers)

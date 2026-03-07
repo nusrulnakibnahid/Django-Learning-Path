@@ -11,5 +11,10 @@
     <h1>This is {{ da }} page</h1>
     <h2>  i love {{ da }}. i {{ l }} it in {{ d }} days.</h3>
 
+    <!-- using for loop -->
+    {% for tn in names reversed %}
+    {{ forloop.counter }}  {{ tn }} <br>
+    {% endfor %}
+
 </body>
 </html>    
