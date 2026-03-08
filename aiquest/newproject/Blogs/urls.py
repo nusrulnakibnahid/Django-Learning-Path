@@ -4,7 +4,7 @@ from .import views
 
 urlpatterns = [
 
-    path('', views.blog1),
+    path('b/', views.blog1),
     
 
 ]
