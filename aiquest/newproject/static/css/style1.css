@@ -1,0 +1,21 @@
+h1{
+    color:blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    font-weight: 900;
+}
+
+p {
+    color: red;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+body {
+    background-color:rgb(155, 226, 179);
+}
+
+img {
+    width: 100px;
+    height: 500px;
+}
