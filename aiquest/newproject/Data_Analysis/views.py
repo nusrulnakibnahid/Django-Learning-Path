@@ -13,3 +13,7 @@ def data_analysis(request):
     # return render(request, 'data_analysis/data_analysis.html', context=update)
 
     return render(request, 'data_analysis/data_analysis.html', context=Teachers)
+
+
+def analysis(request):
+    return render(request, 'data_analysis/analysis.html')
