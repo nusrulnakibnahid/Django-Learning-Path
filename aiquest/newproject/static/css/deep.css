@@ -1,0 +1,14 @@
+body {
+    background-color: purple;
+}
+
+h1{
+    color: red;
+    font-family: monospace;
+    background-color: rgb(0, 255, 85);
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}
