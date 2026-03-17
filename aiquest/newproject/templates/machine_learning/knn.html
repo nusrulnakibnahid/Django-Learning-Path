@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/knn.css' %}">
     <title>KNN</title>
 </head>
 <body>
@@ -13,26 +15,26 @@
     <h2>Create Table Here</h2>
 
     <table width="500" border="1px" align="center">
-        <tr align="center">
+        <tr class="thead">
             <th>Teacher's Name</th>
             <th>Course</th>
             <th>Class</th>
             <th>Duration</th>
         </tr>
 
-        <tr align="center">
+        <tr align="center" class="A">
             <td>Mr. A</td>
             <td>Machine Learning</td>
             <td>101</td>
             <td>3 hours</td>
         </tr>
-        <tr align="center">
+        <tr align="center" class="B">
             <td>Mr. B</td>
             <td>Data Analysis</td>
             <td>102</td>
             <td>2 hours</td>
         </tr>
-        <tr align="center">
+        <tr align="center" class="C">
             <td>Mr. C</td>
             <td>Deep Learning</td>
             <td>103</td>
