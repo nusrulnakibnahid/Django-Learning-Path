@@ -1,9 +1,11 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/analyse.css' %}" />
     <title>Analysis</title>
   </head>
   <body>
@@ -19,7 +21,7 @@
 
     <p>This is <del>Analysis</del> page</p>
 
-    <div>
+    <div class="font">
       <p>(a+b)<sup>2</sup></p>
       <p>(a-b)<sub>2</sub></p>
       <p><abbr title="Data Analysis">dt</abbr></p>
@@ -32,11 +34,14 @@
       <p><a href="https://www.google.com">Google</a></p>
     </div>
 
-    <pre>
+    <pre id="hello">
       hello
                                                       Django
           ML
     </pre>
+
+    <del class="d">300</del> <br>
+    <ins class="i">250</ins>
 
     <p>Welcome to <span style="color: chocolate; font: 1em sans-serif;">Django</span> World</p>
   </body>
