@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.margin{
+    height: 500px;
+    width: 500px;
+    border: 5px solid blue;
+}
+
+.padding{
+    height: 300px;
+    width: 300px;
+    border: 5px solid red;
+}

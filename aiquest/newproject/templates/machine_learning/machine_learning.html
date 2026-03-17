@@ -1,34 +1,46 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ml.css' %}" />
+
     <title>Machine Learning</title>
   </head>
+
   <body>
-   
     <h1>This is {{c}} page</h1>
 
     <h2>
       i learn {{ c }}. Total class {{ tl }}. Available seat {{ st }}. Class
       duration {{ cd }}.
-    </h2> 
+    </h2>
 
+    <!--filtering variable in lower to upper case & capfirst-->
+    <h3>This is upper case now {{ c|upper }}</h3>
 
- <!--filtering variable in lower to upper case & capfirst-->
-    <h3> This is upper case now {{ c|upper }} </h3> 
+    <h3>This is Cap first now {{ c|capfirst }}</h3>
 
-    <h3> This is Cap first now {{ c|capfirst }} </h3>
+    <!--Using Tag-->
+    {% if st == 40 %}
+    <h1>this is if part</h1>
+    {% elif st == 20 %}
+    <h2>this is elif part</h2>
+    {% else %}
+    <h2>this is else part</h2>
+    {% endif %}
 
-   <!--Using Tag-->
-   {% if st == 40 %}
-   <h1> this is if part</h1>
-   {% elif st == 20 %}
-   <h2> this is elif part</h2>
-   {% else %}
-   <h2> this is else part</h2>
-   {% endif %}
+    <br><br><br><br><br><br>
 
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+      quibusdam, magnam facilis quasi neque odit quaerat temporibus architecto
+      ex fugit minus officiis molestiae voluptas incidunt fugiat eaque labore
+      commodi consectetur quas. Reiciendis impedit id cum optio mollitia
+      obcaecati tenetur ratione vitae nulla quo, aperiam consequuntur excepturi
+      distinctio atque, pariatur quia?
+    </p>
   </body>
 </html>

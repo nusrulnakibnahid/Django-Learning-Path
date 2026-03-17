@@ -1,0 +1,17 @@
+h1,h2{
+    background-color: chocolate;
+}
+
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 3.5;
+    text-align: justify;
+    text-decoration-color: red;
+    text-indent: 50px;
+    text-shadow: 3px 5px 4px rgba(10, 185, 68, 0.5);
+    text-transform: uppercase;
+
+}
