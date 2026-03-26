@@ -1,48 +1,5 @@
-<!doctype html>
-{% load static %}
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/analyse.css' %}" />
-    <title>Analysis</title>
-  </head>
-  <body>
-    <p>This is <b>Analysis</b> page</p>
+{% extends 'common_code/base.html' %}
 
-    <h1>This is <small>Analysis</small> page</h1>
+{% block title %} Analysis {% endblock title %}
 
-    <h1>This is <i>Analysis</i> page</h1>
-
-    <h1>This is <u>Analysis</u> page</h1>
-
-    <h1>This is <mark>Analysis</mark> page</h1>
-
-    <p>This is <del>Analysis</del> page</p>
-
-    <div class="font">
-      <p>(a+b)<sup>2</sup></p>
-      <p>(a-b)<sub>2</sub></p>
-      <p><abbr title="Data Analysis">dt</abbr></p>
-      <h1>h1 Tag</h1>
-      <h2>h2 Tag</h2>
-      <h3>h3 Tag</h3>
-      <h4>h4 Tag</h4>
-      <h5>h5 Tag</h5>
-      <h6>h6 Tag</h6>
-      <p><a href="https://www.google.com">Google</a></p>
-    </div>
-
-    <pre id="hello">
-      hello
-                                                      Django
-          ML
-    </pre>
-
-    <del class="d">300</del> <br>
-    <ins class="i">250</ins>
-
-    <p>Welcome to <span style="color: chocolate; font: 1em sans-serif;">Django</span> World</p>
-  </body>
-</html>
+{% block alert %} This is Analysis Page {% endblock alert %}
