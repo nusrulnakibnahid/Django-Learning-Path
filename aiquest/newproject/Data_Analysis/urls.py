@@ -4,7 +4,7 @@ from .import views
 
 urlpatterns = [
 
-    path('', views.data_analysis),
+    path('', views.data_analysis, name='data'),
     path('analysis/', views.analysis),
     
 

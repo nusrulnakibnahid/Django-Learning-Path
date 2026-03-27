@@ -9,6 +9,6 @@ urlpatterns = [
     # path('about/',views.about_us),
     path('rn/', views.random),
     path('knn/', views.K_nearest),
-    path('dt/', views.dtree),
+    path('dt/', views.dtree,name='dt'),
 
 ]
