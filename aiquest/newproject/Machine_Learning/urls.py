@@ -4,11 +4,11 @@ from .import views
 
 urlpatterns = [
 
-    path('machine/', views.machine_learning),
+    path('machine/', views.machine_learning, name='MN'),
     # path('dl/',views.deep_learning),
     # path('about/',views.about_us),
     path('rn/', views.random),
-    path('knn/', views.K_nearest),
+    path('knn/', views.K_nearest,name='knn'),
     path('dt/', views.dtree,name='dt'),
 
 ]
