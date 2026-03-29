@@ -7,3 +7,4 @@ class Teachers(models.Model):
     tname = models.CharField(max_length=40)
     temail = models.EmailField(max_length=30)
 
+  
